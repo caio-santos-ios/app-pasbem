@@ -1,9 +1,26 @@
 {
     "name": "PasBem App",
     "short_name": "PasBem",
+    "id": "/aplicativo/",
+    "start_url": "/aplicativo/",
+    "scope": "/aplicativo/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
     "icons": [
-        { "src": "/aplicativo/icon-192x192.png", "sizes": "192x192", "type": "image/png" },
-        { "src": "/aplicativo/icon-512x512.png", "sizes": "512x512", "type": "image/png" }
+        { 
+            "src": "/aplicativo/icon-192x192.png", 
+            "sizes": "192x192", 
+            "type": "image/png",
+            "purpose": "any maskable" 
+        },
+        { 
+            "src": "/aplicativo/icon-512x512.png", 
+            "sizes": "512x512", 
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
     ],
     "screenshots": [
         {
@@ -20,10 +37,5 @@
             "form_factor": "narrow",
             "label": "PasBem App Mobile"
         }
-    ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "start_url": "/aplicativo/",
-    "display": "standalone",
-    "orientation": "portrait"
+    ]
 }
