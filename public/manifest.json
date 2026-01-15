@@ -1,10 +1,11 @@
 {
-    "name": "PasBem App",
+    "name": "PasBem",
     "short_name": "PasBem",
     "id": "/aplicativo/",
     "start_url": "/aplicativo/",
     "scope": "/aplicativo/",
     "display": "standalone",
+    "display_override": ["standalone", "window-controls-overlay"],
     "orientation": "portrait",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",

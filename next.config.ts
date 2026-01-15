@@ -1,4 +1,5 @@
 import withPWAInit from "@ducanh2912/next-pwa";
+import { NextConfig } from "next";
 
 const withPWA = withPWAInit({
   dest: "public",
@@ -12,10 +13,26 @@ const withPWA = withPWAInit({
 });
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
   basePath: '/aplicativo',
   // Se você tiver problemas com CSS/Imagens no subdiretório, descomente a linha abaixo:
   // assetPrefix: '/aplicativo/', 
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"],
+    });
+    return config;
+  },
+    
+    turbopack: {
+      rules: {
+        '*.svg': {
+          loaders: ['@svgr/webpack'],
+          as: '*.js',
+        },
+      },
+    },
 };
 
 export default withPWA(nextConfig);
