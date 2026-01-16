@@ -1,42 +1,47 @@
 {
-    "name": "PasBem",
-    "short_name": "PasBem",
-    "id": "/aplicativo/",
-    "start_url": "/aplicativo/",
-    "scope": "/aplicativo/",
-    "display": "standalone",
-    "display_override": ["standalone", "window-controls-overlay"],
-    "orientation": "portrait",
-    "background_color": "#ffffff",
-    "theme_color": "#ffffff",
-    "icons": [
-        { 
-            "src": "/aplicativo/icon-192x192.png", 
-            "sizes": "192x192", 
-            "type": "image/png",
-            "purpose": "any maskable" 
-        },
-        { 
-            "src": "/aplicativo/icon-512x512.png", 
-            "sizes": "512x512", 
-            "type": "image/png",
-            "purpose": "any maskable"
-        }
-    ],
-    "screenshots": [
-        {
-            "src": "/aplicativo/icon-512x512.png", 
-            "sizes": "512x512",
-            "type": "image/png",
-            "form_factor": "wide",
-            "label": "PasBem App Desktop"
-        },
-        {
-            "src": "/aplicativo/icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "form_factor": "narrow",
-            "label": "PasBem App Mobile"
-        }
-    ]
+  "name": "PasBem App",
+  "short_name": "PasBem",
+  "id": "/aplicativo/",
+  "start_url": "/aplicativo/",
+  "scope": "/aplicativo/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "description": "Aplicativo de saúde PasBem",
+  "icons": [
+    {
+      "src": "/aplicativo/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/aplicativo/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/aplicativo/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/aplicativo/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/aplicativo/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Tela inicial PasBem"
+    }
+  ]
 }
