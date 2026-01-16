@@ -6,9 +6,11 @@ const withPWA = withPWAInit({
   cacheOnFrontEndNav: true,
   aggressiveFrontEndNavCaching: true,
   reloadOnOnline: true,
-  disable: process.env.NODE_ENV === "development", // Dica: desabilite em dev para não cachear tudo enquanto programa
+  disable: process.env.NODE_ENV === "development",
   workboxOptions: {
     disableDevLogs: true,
+    // Aumenta o limite para 10MB para suportar os arquivos do template TailAdmin
+    maximumFileSizeToCacheInBytes: 10 * 1024 * 1024, 
   },
 });
 
